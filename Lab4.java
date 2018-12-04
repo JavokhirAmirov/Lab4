@@ -6,71 +6,71 @@ public class Lab4 {
 
 	public static void main(String[] args) {
 
-		Students students =
+		Student student =
 
-				new Students("Amirov", "Javokhir", 20,
+				new Student("Amirov", "Javokhir", 20,
 
 						"IP-76", 5.0);
 
-		Students[] student = new Students[3];
+		Student[] students = new Student[3];
 
-		student[0] = students;
+		students[0] = student;
 
-		student[1] = new Students("Filiz", "Jihangir", 21,
+		students[2] = new Student("Filiz", "Jihangir", 21,
 
 				"IP-76", 4.5);
 
-		student[2] = new Students("Karalikli", "Ilhan", 23,
+		students[1] = new Student("Karalikli", "Ilhan", 23,
 
 				"IP-76", 4.2);
 
-		for (int i = 0; i < student.length; i++) {
+		for (int i = 0; i < students.length; i++) {
 
-			System.out.println(student[i].getFirstName() + " " +
+			System.out.println(students[i].getFirstName() + " " +
 
-					student[i].getSecondName() + " " +
+					students[i].getSecondName() + " " +
 
-					student[i].getAge() + " " +
+					students[i].getAge() + " " +
 
-					student[i].getGroup() + " " +
+					students[i].getGroup() + " " +
 
-					student[i].getAverageMark());
-
-		}
-
-		Arrays.sort(student, Comparator.comparing(Students::getFirstName));
-
-		System.out.println("+++++++++++++++++++++");
-
-		for (int i = 0; i < student.length; i++) {
-
-			System.out.println(student[i].getFirstName() + " " +
-
-					student[i].getSecondName() + " " +
-
-					student[i].getAge() + " " +
-
-					student[i].getGroup() + " " +
-
-					student[i].getAverageMark());
+					students[i].getAverageMark());
 
 		}
 
-		Arrays.sort(student, Comparator.comparing(Students::getSecondName).reversed());
+		Arrays.sort(students, Comparator.comparing(Student::getFirstName));
 
 		System.out.println("+++++++++++++++++++++");
 
-		for (int i = 0; i < student.length; i++) {
+		for (int i = 0; i < students.length; i++) {
 
-			System.out.println(student[i].getFirstName() + " " +
+			System.out.println(students[i].getFirstName() + " " +
 
-					student[i].getSecondName() + " " +
+					students[i].getSecondName() + " " +
 
-					student[i].getAge() + " " +
+					students[i].getAge() + " " +
 
-					student[i].getGroup() + " " +
+					students[i].getGroup() + " " +
 
-					student[i].getAverageMark());
+					students[i].getAverageMark());
+
+		}
+
+		Arrays.sort(students, Comparator.comparing(Student::getSecondName).reversed());
+
+		System.out.println("+++++++++++++++++++++");
+
+		for (int i = 0; i < students.length; i++) {
+
+			System.out.println(students[i].getFirstName() + " " +
+
+					students[i].getSecondName() + " " +
+
+					students[i].getAge() + " " +
+
+					students[i].getGroup() + " " +
+
+					students[i].getAverageMark());
 
 		}
 
