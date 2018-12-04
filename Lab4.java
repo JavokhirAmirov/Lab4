@@ -16,7 +16,7 @@ public class Lab4 {
 
 		students[0] = student;
 
-		students[2] = new Student("Filiz", "Jihangir", 21,
+		students[2] = new Student("Filiz", "Jihangir", 22,
 
 				"IP-76", 4.5);
 
