@@ -1,7 +1,7 @@
 
 public class Lab3 {
 	public static void main(String[] args) {
-		String text = "Hello my Mother! I am at home. I love You!";
+		String text = "Hello my Mother! I am at home. I love You! When will you be at home?";
 		int currentSentenceStartPosition = 0;
 
 		int[] indexes = new int[3];
